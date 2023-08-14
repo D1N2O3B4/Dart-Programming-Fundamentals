@@ -21,4 +21,7 @@ void main() {
   //To add multiple elements at a time easily use the addAll func
   friends.addAll(["Tyrese", "Chicka", "Maurice"]);
   print(friends);
+  //To insert at specific positions
+  friends.insert(2, "Mike");
+  friends.insertAll(1, ["Dennis", "Alfred", "Samuel"]);
 }
