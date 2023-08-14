@@ -11,4 +11,14 @@ void main() {
   /*To do string concat with vars you need to include the var in the string but
 	have a $ infront of it.*/
   print("I am called $soop and i am $age years old");
+
+  //On to lists my guy
+  var friends = ["Paul", "Martin", "Sean"];
+  //note check if we can have only one datatype lists
+  print("$friends[2] is the last on the list");
+  friends.add("Ricko");
+  print("Added new friend $friends[3]");
+  //To add multiple elements at a time easily use the addAll func
+  friends.addAll(["Tyrese", "Chicka", "Maurice"]);
+  print(friends);
 }
