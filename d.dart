@@ -15,9 +15,9 @@ void main() {
   //On to lists my guy
   var friends = ["Paul", "Martin", "Sean"];
   //note check if we can have only one datatype lists
-  print("$friends[2] is the last on the list");
+  print("{$friends[2]} is the last on the list");
   friends.add("Ricko");
-  print("Added new friend $friends[3]");
+  print("Added new friend {$friends[3]}");
   //To add multiple elements at a time easily use the addAll func
   friends.addAll(["Tyrese", "Chicka", "Maurice"]);
   print(friends);
