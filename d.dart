@@ -14,20 +14,25 @@ void main() {
 
   //On to lists my guy
   var friends = ["Paul", "Martin", "Sean"];
+
   //note check if we can have only one datatype lists
   print("${friends[2]} is the last on the list");
   friends.add("Ricko");
   print("Added new friend ${friends[3]}");
+
   //To add multiple elements at a time easily use the addAll func
   friends.addAll(["Tyrese", "Chicka", "Maurice"]);
   print(friends);
+
   //To insert at specific positions
   friends.insert(2, "Mike");
   friends.insertAll(1, ["Dennis", "Alfred", "Samuel"]);
+
   friends.remove("Martin");
   //To remove a specific element if another like it occurs use this:
   var doubleelementlist = [1, "Ryan", 3, true, "Ryan"];
   //With this i will have no choice but to use the removeAt func
-  doubleelementlist
-      .removeAt(1); //!Note this takes index postions not the element
+  doubleelementlist.removeAt(1); //!Note this takes index postions not the element
+
+	
 }
