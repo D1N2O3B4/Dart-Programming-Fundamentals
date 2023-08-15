@@ -47,6 +47,14 @@ void main() {
   members.remove("John");
   //search for the removeWhere
   members.clear();
-
   print(members);
+
+  //loops
+  for (var i = 5; i <= 4; i++) {
+    print(members);
+  }
+
+  // for (var i in members){
+
+  // }
 }
