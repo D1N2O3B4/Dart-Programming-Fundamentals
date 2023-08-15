@@ -62,4 +62,12 @@ void main() {
     print("No man k is $k increase till 5");
     k++;
   }
+  //If else else if are the same as in Java
+
+  //Functions in Dart
+  Age_In_Dog_Years(int human_age) {
+    return human_age * 7;
+  }
+
+  print("Your age in dog years is ${Age_In_Dog_Years(23)}");
 }
