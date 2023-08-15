@@ -50,11 +50,11 @@ void main() {
   print(members);
 
   //loops
-  for (var i = 5; i <= 4; i++) {
-    print(members);
+  for (var i = 1; i <= 4; i++) {
+    print(i);
   }
-
-  // for (var i in members){
-
-  // }
+  members = {"John": 31, "Petra": 22, "Donavan": 34};
+  for (var j in members.keys) {
+    print(j);
+  }
 }
