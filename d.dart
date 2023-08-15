@@ -32,7 +32,10 @@ void main() {
   //To remove a specific element if another like it occurs use this:
   var doubleelementlist = [1, "Ryan", 3, true, "Ryan"];
   //With this i will have no choice but to use the removeAt func
-  doubleelementlist.removeAt(1); //!Note this takes index postions not the element
+  doubleelementlist
+      .removeAt(1); //!Note this takes index postions not the element
 
-	
+  //MAPS
+  var members = {"John": 31, "Petra": 22, "Donavan": 34};
+  print("The member John is ${members["John"]} years old");
 }
