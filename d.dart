@@ -42,5 +42,6 @@ void main() {
   print(members.keys);
   print(members.values);
   print(members.length);
+  members.addAll({"Kiki": 27, "Rochelle": 23, "Margret": 34});
   members.remove("John");
 }
