@@ -38,4 +38,9 @@ void main() {
   //MAPS
   var members = {"John": 31, "Petra": 22, "Donavan": 34};
   print("The member John is ${members["John"]} years old");
+  //get key or value or length
+  print(members.keys);
+  print(members.values);
+  print(members.length);
+  members.remove("John");
 }
