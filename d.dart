@@ -45,5 +45,8 @@ void main() {
   members["Yolanda"] = 31;
   members.addAll({"Kiki": 27, "Rochelle": 23, "Margret": 34});
   members.remove("John");
+  //search for the removeWhere
+  members.clear();
+
   print(members);
 }
