@@ -18,5 +18,12 @@ void main() {
 
   int radius = 7;
   double circleArea = pi * (radius * radius);
+  circleArea.round();
   print("Circle's area is $circleArea");
+
+  //final and const
+  const age = 24; //i am known at compile time
+  final date = DateTime.now(); //i can only be known at runtime
+
+  print("Const: $age and Final: $date");
 }
