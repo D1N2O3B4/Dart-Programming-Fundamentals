@@ -7,5 +7,9 @@ void main() {
   print(23 ~/ 3);
 
   double sinValue = sin(90);
-  print(sinValue);
+  double cosValue = cos(90);
+  double minVal = min(sinValue, cosValue);
+  double maxVal = max(sinValue, cosValue);
+  print(
+      "From comparing $sinValue and $cosValue our min value is $minVal and our max is $maxVal");
 }
