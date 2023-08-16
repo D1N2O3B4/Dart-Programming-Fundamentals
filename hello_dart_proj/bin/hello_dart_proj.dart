@@ -15,4 +15,8 @@ void main() {
 
   double sqRoot = sqrt(69);
   print("Square root of 69 is $sqRoot");
+
+  int radius = 7;
+  double circleArea = pi * (radius * radius);
+  print("Circle's area is $circleArea");
 }
