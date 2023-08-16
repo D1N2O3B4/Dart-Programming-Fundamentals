@@ -5,4 +5,7 @@ import 'dart:math';
 void main() {
   print('Hello world: ${hello_dart_proj.calculate()}!');
   print(23 ~/ 3);
+
+  double sinValue = sin(90);
+  print(sinValue);
 }
