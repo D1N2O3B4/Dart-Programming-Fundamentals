@@ -12,4 +12,7 @@ void main() {
   double maxVal = max(sinValue, cosValue);
   print(
       "From comparing $sinValue and $cosValue our min value is $minVal and our max is $maxVal");
+
+  double sqRoot = sqrt(69);
+  print("Square root of 69 is $sqRoot");
 }
