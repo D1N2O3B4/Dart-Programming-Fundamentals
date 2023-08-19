@@ -2,6 +2,7 @@ void main() {
   //CLASSES IN DART
 
   Car car1 = Car("BMW", "M4 Series", "Blue", 2018);
+  car1.showInfo();
 }
 
 class Car {
