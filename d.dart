@@ -69,16 +69,17 @@ void main() {
   //Functions in Dart and user input
   print("What is your age?");
   var user_age = stdin.readLineSync();
-
   Age_In_Dog_Years(human_age, {lisp = "Default name"}) {
     return "${human_age * 7} name is $lisp";
   }
 
-  //Parse int
-  var a = 4;
+  //Parse int,string,double
+  var a = "3.1";
   var b = "3";
-  var c = a + int.parse(b);
+  var c = double.parse(a) + int.parse(b);
   print(c);
+  var d = 23;
+  d.toString;
 
   print(
       "Your age in dog years is ${Age_In_Dog_Years(user_age, lisp: "Francis")}");
