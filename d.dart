@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   final int var1 = 34;
   const int age = 23;
@@ -64,10 +66,20 @@ void main() {
   }
   //If else else if are the same as in Java
 
-  //Functions in Dart
+  //Functions in Dart and user input
+  print("What is your age?");
+  var user_age = stdin.readLineSync();
+
   Age_In_Dog_Years(human_age, {lisp = "Default name"}) {
     return "${human_age * 7} name is $lisp";
   }
 
-  print("Your age in dog years is ${Age_In_Dog_Years(23, lisp: "Francis")}");
+  //Parse int
+  var a = 4;
+  var b = "3";
+  var c = a + int.parse(b);
+  print(c);
+
+  print(
+      "Your age in dog years is ${Age_In_Dog_Years(user_age, lisp: "Francis")}");
 }
