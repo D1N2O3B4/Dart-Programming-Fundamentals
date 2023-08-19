@@ -8,17 +8,25 @@ void main() {
   print("Type any number:");
   var userInput = stdin.readLineSync();
   var userConv = int.parse(userInput ?? '0');
-  switch (userConv) {
-    case 3:
-      print("Fizz");
-      break;
-    case 5:
-      print("Buzz");
-      break;
-    // case userConv/5:
 
-    default:
-      print(userConv);
-      break;
+  if (userConv == 3 || userConv % 3 == 0) {
+    print("Fizz");
+  } else if (userConv == 5 || userConv % 5 == 0) {
+    print("Buzz");
+  } else if (userConv % 3 == 0 || userConv % 5 == 0) {
+    print("FizzBuzz");
+  } else {
+    print(userConv);
   }
+  // switch (userConv) {
+  //   case 3:
+  //     print("Fizz");
+  //     break;
+  //   case 5:
+  //     print("Buzz");
+  //     break;
+  //   default:
+  //     print(userConv);
+  //     break;
+  // }
 }
