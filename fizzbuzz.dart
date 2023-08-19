@@ -10,11 +10,17 @@ void main() {
   var userConv = int.parse(userInput ?? '0');
 
   if (userConv == 3 || userConv % 3 == 0) {
-    print("Fizz");
+    if (userConv % 5 == 0) {
+      print("FizzBuzz");
+    } else {
+      print("Fizz");
+    }
   } else if (userConv == 5 || userConv % 5 == 0) {
-    print("Buzz");
-  } else if (userConv % 3 == 0 || userConv % 5 == 0) {
-    print("FizzBuzz");
+    if (userConv % 3 == 0) {
+      print("FizzBuzz");
+    } else {
+      print("Buzz");
+    }
   } else {
     print(userConv);
   }
