@@ -65,7 +65,7 @@ void main() {
   //If else else if are the same as in Java
 
   //Functions in Dart
-  Age_In_Dog_Years(human_age, {lisp: "Default name"}) {
+  Age_In_Dog_Years(human_age, {lisp = "Default name"}) {
     return "${human_age * 7} name is $lisp";
   }
 
