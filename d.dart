@@ -68,7 +68,10 @@ void main() {
 
   //Functions in Dart and user input
   print("What is your age?");
-  var user_age = stdin.readLineSync();
+  var user_agestr = stdin.readLineSync();
+  //So basically we cannot convert input from String to int because of the case
+  //Where the input might be null so ?? handles that where 0 is the default null value
+  var userageint = int.parse(user_agestr ?? '0');
   Age_In_Dog_Years(human_age, {lisp = "Default name"}) {
     return "${human_age * 7} name is $lisp";
   }
@@ -82,5 +85,5 @@ void main() {
   d.toString;
 
   print(
-      "Your age in dog years is ${Age_In_Dog_Years(user_age, lisp: "Francis")}");
+      "Your age in dog years is ${Age_In_Dog_Years(userageint, lisp: "Francis")}");
 }
