@@ -13,4 +13,8 @@ class Car {
     this.color = c_color;
     this.year = c_year;
   }
+
+  void showInfo() {
+    print("Brand: $brand\nVersion: $version\nColor: $color\nYear: $year");
+  }
 }
