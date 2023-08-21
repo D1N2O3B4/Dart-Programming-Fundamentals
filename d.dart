@@ -10,14 +10,20 @@ void main() {
   /*Over here even though i assigned values it doesn't mean they are restricted
   to that datatype*/
   String boy_name = "Malfoy";
+  String man_name = "Joel is a friend of Malfoy";
+  man_name = man_name.replaceAll("Malfoy", "David");
   int nameLength = boy_name.length;
+  print(man_name);
+  print(boy_name.compareTo(man_name));
   print(boy_name.isEmpty);
   /*To do string concat with vars you need to include the var in the string but
 	have a $ infront of it.*/
   print("I am called " + soop + " and i am $age years old");
 
   //On to lists my guy
-  var friends = ["Paul", "Martin", "Sean"];
+  List made = List.filled(5, "Boy");
+  print(made);
+  List<String> friends = ["Paul", "Martin", "Sean"];
 
   //note check if we can have only one datatype lists
   print("${friends[2]} is the last on the list");
@@ -40,7 +46,8 @@ void main() {
       .removeAt(1); //!Note this takes index postions not the element
 
   //MAPS
-  var members = {"John": 31, "Petra": 22, "Donavan": 34};
+  Map<String, int> members = {"John": 31, "Petra": 22, "Donavan": 34};
+  // var members = {"John": 31, "Petra": 22, "Donavan": 34};
   print("The member John is ${members["John"]} years old");
   //get key or value or length
   print(members.keys);
