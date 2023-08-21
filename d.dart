@@ -27,6 +27,9 @@ void main() {
   friends.forEach((element) {
     print(element);
   });
+  friends.asMap().forEach((key, value) {
+    print("$key is index to value $value");
+  });
 
   //note check if we can have only one datatype lists
   print("${friends[2]} is the last on the list");
