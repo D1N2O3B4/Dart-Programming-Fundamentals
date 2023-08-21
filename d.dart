@@ -9,7 +9,8 @@ void main() {
   dynamic name = 12;
   /*Over here even though i assigned values it doesn't mean they are restricted
   to that datatype*/
-  print(soop.isEmpty());
+  String boy_name = "Malfoy";
+  print(boy_name.isEmpty);
   /*To do string concat with vars you need to include the var in the string but
 	have a $ infront of it.*/
   print("I am called " + soop + " and i am $age years old");
