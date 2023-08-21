@@ -24,6 +24,9 @@ void main() {
   List made = List.filled(5, "Boy");
   print(made);
   List<String> friends = ["Paul", "Martin", "Sean"];
+  friends.forEach((element) {
+    print(element);
+  });
 
   //note check if we can have only one datatype lists
   print("${friends[2]} is the last on the list");
