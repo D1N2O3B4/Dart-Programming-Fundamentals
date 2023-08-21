@@ -12,7 +12,7 @@ void main() {
   print("WAGUAN");
   /*To do string concat with vars you need to include the var in the string but
 	have a $ infront of it.*/
-  print("I am called $soop and i am $age years old");
+  print("I am called " + soop + " and i am $age years old");
 
   //On to lists my guy
   var friends = ["Paul", "Martin", "Sean"];
