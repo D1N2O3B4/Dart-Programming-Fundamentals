@@ -10,6 +10,7 @@ void main() {
   /*Over here even though i assigned values it doesn't mean they are restricted
   to that datatype*/
   String boy_name = "Malfoy";
+  int nameLength = boy_name.length;
   print(boy_name.isEmpty);
   /*To do string concat with vars you need to include the var in the string but
 	have a $ infront of it.*/
