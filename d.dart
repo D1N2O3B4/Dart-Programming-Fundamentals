@@ -82,6 +82,7 @@ void main() {
   print("User age is $user_agestr");
   //Or we can go the long way using ??
   //Where the input might be null so ?? handles that where 0 is the default null value
+  print("What is your age we are calculating it in Dog years?");
   var choice = stdin.readLineSync();
   var userageint = int.parse(choice ?? '0');
   Age_In_Dog_Years(human_age, {lisp = "Default name"}) {
@@ -95,7 +96,8 @@ void main() {
   print(c);
   var d = 23;
   d.toString;
-
+  var value = (4 > 5) ? "Yeah" : "Oh no";
+  print(value);
   print(
       "Your age in dog years is ${Age_In_Dog_Years(userageint, lisp: "Francis")}");
 }
