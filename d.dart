@@ -19,6 +19,12 @@ void main() {
   /*To do string concat with vars you need to include the var in the string but
 	have a $ infront of it.*/
   print("I am called " + soop + " and i am $age years old");
+  //Do while loop man
+  //We use this when we want to execute a line of code at least once before checking conditions
+  do {
+    print("Value for name is $name");
+    name++;
+  } while (name < 5);
 
   //On to lists my guy
   List made = List.filled(5, "Boy");
