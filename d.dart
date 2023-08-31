@@ -21,10 +21,23 @@ void main() {
   print("I am called " + soop + " and i am $age years old");
   //Do while loop man
   //We use this when we want to execute a line of code at least once before checking conditions
+  print("DO WHILE LOOP SECTION\n");
   do {
     print("Value for name is $name");
     name++;
-  } while (name < 5);
+  } while (name < 20);
+  //try catch and finally
+  print("TRY CATCH AND FINALLY\n");
+  try {
+    int ans;
+    int b = 0;
+    ans = 1 ~/ b;
+    print(ans);
+  } catch (e) {
+    print(e);
+  } finally {
+    print("I work regardless of the outcome");
+  }
 
   //On to lists my guy
   List made = List.filled(5, "Boy");
