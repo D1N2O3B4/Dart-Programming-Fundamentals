@@ -6,4 +6,7 @@ void main(List<String> arguments) {
   print(sin(90));
   double v = 1 / sqrt(2);
   print("And value is ${sin(v)}");
+  //Null operator
+  String? name;
+  // print(name.length?);
 }
