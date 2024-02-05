@@ -12,6 +12,7 @@ void main(List<String> arguments) {
   String? name;
   name = null;
   print(name?.length);
+  print(date);
 
   ///docs commentation in flutter
 }
