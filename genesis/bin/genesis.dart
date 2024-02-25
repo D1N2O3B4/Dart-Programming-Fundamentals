@@ -15,9 +15,20 @@ void main(List<String> arguments) {
   print(date);
   //For this code the ?? is a condition so if null make it 0 and not null
   print(name?.length ?? 0);
+  name = "David";
   //Tenary operator
   int age = 23;
   print(age > 20 ? "Big boy $age" : "No you are too young");
+
+  //Switch statement(There is no need for a break at the end of each case in dart)
+  switch (name) {
+    case "Patrick":
+      print("Hello Patrick");
+    case "David" when age >= 23:
+      print("Waguan David");
+    default:
+      print("Hello other");
+  }
 
   ///docs commentation in flutter
 }
